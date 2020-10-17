@@ -1,0 +1,30 @@
+#logo{
+    height: 50px;
+    width:50px;
+}
+
+ul{
+    list-style-type:none;
+
+}
+
+li{
+    display:inline;
+}
+
+#divSectionOne{
+    height:600px;
+}
+
+#divSectionTwo {
+    height: 600px;
+}
+
+#divSectionThree {
+    height: 600px;
+}
+
+#portada{
+    height:425px;
+    width:750px;
+}
