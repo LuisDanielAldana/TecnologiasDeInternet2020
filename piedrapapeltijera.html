@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Piedra Papel Tijera</title>
+</head>
+<body>
+    <button type="button" onclick="random()">Button</button>
+    <img src="piedrapapeltijera/pregunta.jpg" id="img1" />
+    
+    <script language="JavaScript">
+
+        function random() {
+            var a = Math.round(Math.random() * 2);
+            if (a == 0) {
+                document.getElementById("img1").src = "piedrapapeltijera/piedra.jpg";
+            }
+            else if (a == 1) {
+                document.getElementById("img1").src = "piedrapapeltijera/papel.png";
+            }
+             else{
+                document.getElementById("img1").src = "piedrapapeltijera/tijeras.jpg";
+            }
+
+            alert(a)
+        }
+    </script>
+
+</body>
+</html>
