@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tercer Parcial</title>
+</head>
+<body>
+    <h1>Producción de Manzana</h1>
+    <img src="https://as01.epimg.net/deporteyvida/imagenes/2019/10/21/portada/1571650472_122871_1571650642_noticia_normal_recorte1.jpg" id="img1" />
+    <p>Producción Total</p>
+    <input type="number" name="ProduccionTotal" id="n1" value="250" />
+    <button type="button" onclick="multiplicar()">Numero de Manzanas Totales</button>
+    <br>
+    <p>Producción Actual</p>
+    <input type="number" name="ProduccionActual" id="n2" value="0" />
+    <button type="button" onclick="produccionactual()">Numero de Manzanas Actuales</button>
+    <br />
+    <button type="button" onclick="sumauno()">5</button>
+    <button type="button" onclick="sumados()">15</button>
+    <button type="button" onclick="sumatres()">30</button>
+    <button type="button" onclick="sumacuatro()">50</button>
+    <br />
+    <p>Porcentaje</p>
+    <input type="number" name="Porcentaje" id="n3" value="0" />
+    <br />
+    <button type="button" onclick="calcular()">Calcular</button>
+    <script>
+        function multiplicar() {
+            var a = document.getElementById("n1").value;
+            var b = parseInt(a) * 45;
+            alert(b);
+        }
+        function produccionactual() {
+            var a = document.getElementById("n2").value;
+            var b = parseInt(a) * 45;
+            alert(b);
+        }
+        function sumauno() {
+            total = document.getElementById("n2").value
+            total = parseInt(total) + 5
+            document.getElementById("n2").value = total
+
+        }
+        function sumados() {
+            total = document.getElementById("n2").value
+            total = parseInt(total) + 15
+            document.getElementById("n2").value = total
+        }
+        function sumatres() {
+            total = document.getElementById("n2").value
+            total = parseInt(total) + 30
+            document.getElementById("n2").value = total
+        }
+        function sumacuatro() {
+            total = document.getElementById("n2").value
+            total = parseInt(total) + 50
+            document.getElementById("n2").value = total
+        }
+        function calcular() {
+            var a = document.getElementById("n1").value;
+            var b = document.getElementById("n2").value;
+            var c = (b * 100) / a;
+            document.getElementById("n3").value = c
+            if (c >= 70) {
+                document.getElementById("img1").src = "https://lasillarotarm.blob.core.windows.net/images/2019/08/20/principaltrabajodres_1.jpg";
+
+            }
+            else {
+                document.getElementById("img1").src = "https://as01.epimg.net/deporteyvida/imagenes/2019/10/21/portada/1571650472_122871_1571650642_noticia_normal_recorte1.jpg";
+            }
+        }
+
+    </script>
+</body>
+</html>
