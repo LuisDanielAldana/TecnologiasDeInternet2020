@@ -1,0 +1,30 @@
+h1{
+    text-align: center;
+}
+p{
+    font-size: large;
+}
+#uno{
+    text-align:center;
+}
+#info{
+    font-size:medium;
+}
+#img1{
+    width:400px;
+    height:250px;
+}
+#cinco{
+    float:right;
+}
+.Right {
+    float: right;
+    width: 45%;
+    padding: 10px;
+    margin-top:100px;
+}
+.Left {
+    float: left;
+    width: 45%;
+    padding: 10px;
+}
